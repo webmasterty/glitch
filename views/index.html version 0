@@ -16,11 +16,6 @@
     
     <!-- import the webpage's client-side javascript file -->
     <script src="/client.js" defer></script>
-    
-    <!-- import the Plotly library -->
-    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
-
-    
   </head>
   <body>
     <header>
@@ -35,21 +30,16 @@
       
       
       <form>
-        <input name="choice" type="radio" value="maxTemp">Warmest Year<br>
-        <input name="choice" type="radio" value="minTemp">Coldest Year<br>
-        <input name="choice" type="radio" value="avgTemp">Average Temperature<br>
-        <input name="choice" type="radio" value="allTemp">All the data<br>
-        <button type="submit" id="submit-choice">Submit Choice</button>
+        <input name="dream" aria-label="a new dream" type="text" maxlength="100" placeholder="Dreams!">
+        <button type="submit" id="submit-dream">Submit Dream</button>
       </form>
       
-      <section class="results">
-        <ul id="results"></ul>
+      <section class="dreams">
+        <ul id="dreams"></ul>
+        
+          
+        
       </section>
-      
-      <div id="plotlyGraph" style="width: 90%"></div>
-      <div id="tester" style="width:600px;height:250px;"></div>
-      <div id="myDiv" style="width:600px;height:250px;"></div>
-      <div id="myDiv1" style="width:600px;height:250px;"></div>
       
     </main>
 
@@ -63,6 +53,4 @@
     <script src="https://button.glitch.me/button.js"></script>
 
   </body>
-
-  
 </html>

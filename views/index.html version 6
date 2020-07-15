@@ -19,8 +19,7 @@
     
     <!-- import the Plotly library -->
     <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
-
-    
+  
   </head>
   <body>
     <header>
@@ -47,9 +46,6 @@
       </section>
       
       <div id="plotlyGraph" style="width: 90%"></div>
-      <div id="tester" style="width:600px;height:250px;"></div>
-      <div id="myDiv" style="width:600px;height:250px;"></div>
-      <div id="myDiv1" style="width:600px;height:250px;"></div>
       
     </main>
 
@@ -63,6 +59,4 @@
     <script src="https://button.glitch.me/button.js"></script>
 
   </body>
-
-  
 </html>

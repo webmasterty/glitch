@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ALT1 Revision</title>
-    
-    
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,40 +16,30 @@
     
     <!-- import the webpage's client-side javascript file -->
     <script src="/client.js" defer></script>
-    
-    <!-- import the Plotly library -->
-    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
-
-    
   </head>
   <body>
     <header>
       <h1>
-        Welcome to the Global Temp Grapher
+        A Dream of the Future
       </h1>
     </header>
 
     <main>
+      <p class="bold">Oh hi,</p>
       
-      
-      
+      <p>Tell me your hopes and dreams:</p>
       
       <form>
-        <input name="choice" type="radio" value="maxTemp">Warmest Year<br>
-        <input name="choice" type="radio" value="minTemp">Coldest Year<br>
-        <input name="choice" type="radio" value="avgTemp">Average Temperature<br>
-        <input name="choice" type="radio" value="allTemp">All the data<br>
-        <button type="submit" id="submit-choice">Submit Choice</button>
+        <input name="dream" aria-label="a new dream" type="text" maxlength="100" placeholder="Dreams!">
+        <button type="submit" id="submit-dream">Submit Dream</button>
       </form>
       
-      <section class="results">
-        <ul id="results"></ul>
+      <section class="dreams">
+        <ul id="dreams"></ul>
+        <button id="clear-dreams">
+          Clear Dreams
+        </button>
       </section>
-      
-      <div id="plotlyGraph" style="width: 90%"></div>
-      <div id="tester" style="width:600px;height:250px;"></div>
-      <div id="myDiv" style="width:600px;height:250px;"></div>
-      <div id="myDiv1" style="width:600px;height:250px;"></div>
       
     </main>
 
@@ -63,6 +53,4 @@
     <script src="https://button.glitch.me/button.js"></script>
 
   </body>
-
-  
 </html>

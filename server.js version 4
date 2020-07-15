@@ -35,8 +35,7 @@ app.get("/", (request, response) => {
 
 //handler functions
 app.get("/getAllData",(request,response)=>{
-  //db.all("SELECT * FROM temperatures WHERE temp_value = (SELECT MAX(temp_value)  FROM temperatures);",(err,rows)=>{
-  db.all("SELECT temp_value, temp_year FROM temperatures ORDER BY temp_year;",(err,rows)=>{
+  db.all("SELECT * FROM temperatures;",(err,rows)=>{
     response.send(JSON.stringify(rows));
   });
 });
@@ -52,9 +51,6 @@ app.get("/getMaxData",(request,response)=>{
     response.send(JSON.stringify(rows));
   });
 });
-
-
-
 
 app.get("/getMinData",(request,response)=>{
   db.all("SELECT * FROM temperatures WHERE temp_value = (SELECT MIN(temp_value)  FROM temperatures);",(err,rows)=>{

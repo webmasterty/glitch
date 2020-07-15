@@ -1,21 +1,11 @@
-# hello-sqlite
+# Revision of ALT1 – a website interacting with an SQL database
 
-A starter that has a database
+This tutorial covers the creation of an interactive website including retrieval of data from a relational database (sql).  
 
-- This app uses sqlite but you can power your apps with [a number of other storage options](https://glitch.com/storage)
-- `sqlite.db` is created and put into the `.data` folder, a hidden directory whose contents aren’t copied when a project is remixed. You can see the contents of `.data` in the console under "Logs"
-- To save to the database, remix this app!
+The database contains existing data produced from an ALT2 revision tutorial.
 
-On the front-end,
-
-- Edit `views/index.html`,  `public/style.css`, and `public/client.js`
-- Drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-
-- Your app starts at `server.js`
-- Add frameworks and packages in `package.json`
-- Safely store app secrets in `.env` (nobody can see this but you and people you invite)
+Remix a copy for yourself to walk through the stages of how it was created.  When you remix the project you will get a copy of the finished artefact.  However, it is important to understand the design process and testing methodologies used whilst developing the artefact originally.   Hence, you should use the tutorial to walk through the stages one at a time.
+The tuturial can be found in the file "Tutorial.md".
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
 
