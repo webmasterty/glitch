@@ -1,68 +1,96 @@
 <!-- This is a static file -->
 <!-- served from your routes in server.js -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ALT1 Revision</title>
-    
-    
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    
     
     <!-- import the webpage's client-side javascript file -->
     <script src="/client.js" defer></script>
-    
-    <!-- import the Plotly library -->
-    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
-
-    
   </head>
   <body>
     <header>
       <h1>
-        Welcome to the Global Temp Grapher
+        A Kahoot for the future
       </h1>
     </header>
 
-    <main>
+ 
       
       
+      <p>Get Questions</p>
       
-      
-      <form>
-        <input name="choice" type="radio" value="maxTemp">Warmest Year<br>
-        <input name="choice" type="radio" value="minTemp">Coldest Year<br>
-        <input name="choice" type="radio" value="avgTemp">Average Temperature<br>
-        <input name="choice" type="radio" value="allTemp">All the data<br>
-        <button type="submit" id="submit-choice">Submit Choice</button>
+      <form >
+
+        <button type="submit" id="getQFormID">getQ</button>
       </form>
-      
-      <section class="results">
-        <ul id="results"></ul>
-      </section>
-      
-      <div id="plotlyGraph" style="width: 90%"></div>
-      <div id="tester" style="width:600px;height:250px;"></div>
-      <div id="myDiv" style="width:600px;height:250px;"></div>
-      <div id="myDiv1" style="width:600px;height:250px;"></div>
-      
-    </main>
+     
 
-    <footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
-    </footer>
+    
+    
+ 
+  <form method="get">
+<fieldset>
+<p>
+  Question <span id="NumqidID1"></span>
+  </p>
+  <h2 id="qtxtID1">
+ 
+  </h2>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+<select name="qansN1" id="qidID1">
+  <option value="opt1">{{items[0].qopt1}}</option>
+  <option value="opt2">{{items[0].qopt2}}</option>
+  <option value="opt3">{{items[0].qopt3}}</option>
+  <option value="opt4">{{items[0].qopt4}}</option>
+  
+ </select><br>
+     
+  </fieldset>
+    <br>
+    <fieldset>
+<p>
+  Question <span id="NumqidID2"></span>
+  </p>
+  <h2 id="qtxtID2">
+ 
+  </h2>
 
-  </body>
+<select name="qansN2" id="qidID2">
+  <option value="opt1">{{items[0].qopt1}}</option>
+  <option value="opt2">{{items[0].qopt2}}</option>
+  <option value="opt3">{{items[0].qopt3}}</option>
+  <option value="opt4">{{items[0].qopt4}}</option>
+  
+ </select><br>
+     
+  </fieldset>
+    <br>
+    <fieldset>
+<p>
+  Question <span id="NumqidID3"></span>
+  </p>
+  <h2 id="qtxtID3">
+ 
+  </h2>
+
+<select name="qansN3" id="qidID3">
+  <option value="opt1">{{items[0].qopt1}}</option>
+  <option value="opt2">{{items[0].qopt2}}</option>
+  <option value="opt3">{{items[0].qopt3}}</option>
+  <option value="opt4">{{items[0].qopt4}}</option>
+  
+ </select><br>
+     
+  </fieldset>
+    <p> <button type="submit">processQ</button> </p> 
+ </form>
+      
+
+
+
 
   
+  </body>
 </html>
